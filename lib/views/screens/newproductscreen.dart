@@ -59,7 +59,7 @@ class _NewProductScreenState extends State<NewProductScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: const Text("New Product/Service")),
+        appBar: AppBar(title: const Text("New Homestay")),
         body: SingleChildScrollView(
           child: Column(children: [
             GestureDetector(
@@ -87,7 +87,7 @@ class _NewProductScreenState extends State<NewProductScreen> {
                   const Padding(
                     padding: EdgeInsets.all(8.0),
                     child: Text(
-                      "Add New Product",
+                      "Add New Homestay",
                       style: TextStyle(
                         fontSize: 24,
                         fontWeight: FontWeight.w600,
@@ -98,11 +98,11 @@ class _NewProductScreenState extends State<NewProductScreen> {
                       textInputAction: TextInputAction.next,
                       controller: _prnameEditingController,
                       validator: (val) => val!.isEmpty || (val.length < 3)
-                          ? "Product name must be longer than 3"
+                          ? "Homestay name must be longer than 3"
                           : null,
                       keyboardType: TextInputType.text,
                       decoration: const InputDecoration(
-                          labelText: 'Product Name',
+                          labelText: 'Homestay Name',
                           labelStyle: TextStyle(),
                           icon: Icon(Icons.person),
                           focusedBorder: OutlineInputBorder(
@@ -112,12 +112,12 @@ class _NewProductScreenState extends State<NewProductScreen> {
                       textInputAction: TextInputAction.next,
                       controller: _prdescEditingController,
                       validator: (val) => val!.isEmpty || (val.length < 10)
-                          ? "Product description must be longer than 10"
+                          ? "Homestay description must be longer than 10"
                           : null,
                       maxLines: 4,
                       keyboardType: TextInputType.text,
                       decoration: const InputDecoration(
-                          labelText: 'Product Description',
+                          labelText: 'Homestay Description',
                           alignLabelWithHint: true,
                           labelStyle: TextStyle(),
                           icon: Icon(
@@ -134,11 +134,11 @@ class _NewProductScreenState extends State<NewProductScreen> {
                             textInputAction: TextInputAction.next,
                             controller: _prpriceEditingController,
                             validator: (val) => val!.isEmpty
-                                ? "Product price must contain value"
+                                ? "Homestay price must contain value"
                                 : null,
                             keyboardType: TextInputType.number,
                             decoration: const InputDecoration(
-                                labelText: 'Product Price',
+                                labelText: 'Price per night',
                                 labelStyle: TextStyle(),
                                 icon: Icon(Icons.money),
                                 focusedBorder: OutlineInputBorder(
@@ -151,11 +151,11 @@ class _NewProductScreenState extends State<NewProductScreen> {
                             textInputAction: TextInputAction.next,
                             controller: _prqtyEditingController,
                             validator: (val) => val!.isEmpty
-                                ? "Quantity should be more than 0"
+                                ? "Number of guest should be more than 0"
                                 : null,
                             keyboardType: TextInputType.number,
                             decoration: const InputDecoration(
-                                labelText: 'Product Quantity',
+                                labelText: 'Number of guest',
                                 labelStyle: TextStyle(),
                                 icon: Icon(Icons.ad_units),
                                 focusedBorder: OutlineInputBorder(
@@ -214,7 +214,7 @@ class _NewProductScreenState extends State<NewProductScreen> {
                               val!.isEmpty ? "Must be more than zero" : null,
                           keyboardType: TextInputType.number,
                           decoration: const InputDecoration(
-                              labelText: 'Delivery charge/km',
+                              labelText: 'Distance from the City',
                               labelStyle: TextStyle(),
                               icon: Icon(Icons.delivery_dining),
                               focusedBorder: OutlineInputBorder(

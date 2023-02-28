@@ -10,6 +10,7 @@ class User {
     required this.name,
     required this.email,
     required this.phone,
+    // required String credit, required String regdate, required String address,
     // required this.address,
   });
 

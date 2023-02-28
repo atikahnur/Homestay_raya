@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:homestay_raya/views/screens/profilescreen.dart';
 import '../../models/user.dart';
 import '../screens/loginscreen.dart';
 import '../screens/mainscreen.dart';
@@ -41,8 +42,12 @@ class _MainMenuWidgetState extends State<MainMenuWidget> {
             title: const Text('Seller'),
             onTap: () {
               Navigator.pop(context);
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (content) => SellerScreen(user: widget.user,)));
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (content) => SellerScreen(
+                            user: widget.user,
+                          )));
             },
           ),
           ListTile(
@@ -51,6 +56,18 @@ class _MainMenuWidgetState extends State<MainMenuWidget> {
               Navigator.pop(context);
               Navigator.push(context,
                   MaterialPageRoute(builder: (content) => const LoginScreen()));
+            },
+          ),
+          ListTile(
+            title: const Text('Profile'),
+            onTap: () {
+              Navigator.pop(context);
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (content) => ProfileScreen(
+                            user: widget.user,
+                          )));
             },
           ),
         ],

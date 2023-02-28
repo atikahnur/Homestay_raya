@@ -26,11 +26,11 @@ class _SplashScreenState extends State<SplashScreen> {
     return Stack(
       alignment: Alignment.center,
       children: [
-        // Container(
-        //     decoration: const BoxDecoration(
-        //         image: DecorationImage(
-        //             image: AssetImage('assets/images/poster.png'),
-        //             fit: BoxFit.cover))),
+        Container(
+             decoration: const BoxDecoration(
+                 image: DecorationImage(
+                     image: AssetImage('assets/images/raya.png'),
+                     fit: BoxFit.cover))),
         Padding(
           padding: const EdgeInsets.fromLTRB(0, 50, 0, 20),
           child: Column(
@@ -38,8 +38,8 @@ class _SplashScreenState extends State<SplashScreen> {
             children: const [
               CircularProgressIndicator(),
               Text(
-                "Version 0.1",
-                style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+                "Homestay Raya",
+                style: TextStyle(color: Colors.black , fontSize: 42, fontWeight: FontWeight.bold),
               )
             ],
           ),

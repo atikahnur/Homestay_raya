@@ -100,7 +100,7 @@ class _SellerScreenState extends State<SellerScreen> {
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
-                        "Your current products/services (${productList.length} found)",
+                        "Your current homestay/products (${productList.length} found)",
                         style: const TextStyle(
                             fontSize: 16, fontWeight: FontWeight.bold),
                       ),
